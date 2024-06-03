@@ -1,0 +1,58 @@
+@import './base.css';
+
+.view-padding {
+    padding: 7rem 1rem 2rem;
+    height: 70vh;
+    box-sizing: border-box;
+}
+.label {
+    font-weight: 600;
+    color: var(--color-primary);
+}
+.input {
+    border: 0;
+    border-bottom: 2px solid var(--color-secondary);
+    background-color: var(--color-none);
+    color: var(--color-primary);
+    height: 2rem;
+}
+input::placeholder {
+    color: var(--color-grey);
+    padding-left: 8px;
+}
+input:focus {
+    border-color: var(--color-secondary); 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.business-btn {
+    border-radius: 8px;
+    padding: 1rem;
+    font-weight: 700;
+    font-size: large;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    background-color: none;
+    text-decoration: none;
+    text-align: center;
+}
+.normal-btn {
+    border-radius: 8px;
+    padding: 1rem;
+    font-weight: 500;
+    font-size: large;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    text-decoration: none;
+    text-align: center;
+}
+.action-btn {
+    border-radius: 8px;
+    padding: 1rem;
+    font-weight: 500;
+    font-size: large;
+    color: var(--color-primary);
+    background-color: var(--color-accent);
+    text-decoration: none;
+    text-align: center;
+}
