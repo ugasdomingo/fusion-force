@@ -13,7 +13,11 @@ import LeadsFormComponent from '@/common/LeadsFormComponent.vue';
             el precio más bajo
         </h1>
         <!-- Hero Background Image  -->
-        <img src="/img/hero-bumb.webp" alt="Hero" class="hero-background" />
+        <img
+            src="https://img.freepik.com/free-photo/design-made-up-onion-rings_23-2147927094.jpg?t=st=1717608510~exp=1717612110~hmac=edb3a3e42ac26eae16fa217eddf555c90b8fb384dcdf5815900ca025dc6da1e8&w=740"
+            alt="Hero"
+            class="hero-background"
+        />
     </section>
     <main class="main-colective">
         <section>
@@ -76,7 +80,7 @@ h5 {
 }
 aside {
     position: fixed;
-    top: 30vh;
+    bottom: 0;
     right: 4rem;
     padding: 0.5rem;
     border-radius: 1rem;
