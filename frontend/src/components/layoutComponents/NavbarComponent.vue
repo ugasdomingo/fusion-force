@@ -13,14 +13,14 @@ defineProps<{
 
 <template>
     <nav :class="menuType">
-        <RouterLink class="nav-btn" to="/comparador">
-            Comparador Energía <mdicon name="chevron-double-down" width="24" class="icon-small" />
-        </RouterLink>
+        <!-- <RouterLink class="nav-btn" to="/blog">
+            Blog <mdicon name="chevron-double-down" width="24" class="icon-small" />
+        </RouterLink> -->
         <RouterLink class="nav-btn" to="/paneles-solares">
             Paneles Solares <mdicon name="chevron-double-down" width="24" class="icon-small" />
         </RouterLink>
-        <RouterLink class="nav-btn" to="/blog">
-            Blog <mdicon name="chevron-double-down" width="24" class="icon-small" />
+        <RouterLink class="nav-btn" to="/comparador">
+            Comparador Energía <mdicon name="chevron-double-down" width="24" class="icon-small" />
         </RouterLink>
         <button v-if="userStore.token" @click="userStore.logout" class="logout-btn">
             Cerrar sesión
@@ -53,7 +53,7 @@ defineProps<{
     text-decoration: none;
     font-weight: 400;
     font-size: 1.2rem;
-    color: var(--color-secondary);
+    color: var(--color-grey);
 }
 .logout-btn {
     padding: 0.6rem;

@@ -1,7 +1,7 @@
 export const contactAndSocial = [
     {
         itemsName: 'Email',
-        description: 'info@fenintegral.es',
+        description: 'info@fusionforce.es',
         icon: 'email',
         link: '',
         accion: 'Enviar email'
@@ -22,30 +22,9 @@ export const contactAndSocial = [
     },
     {
         itemsName: 'Instagram',
-        description: '@fenintegral',
+        description: '@fusionforce',
         icon: 'instagram',
         link: 'https://www.instagram.com/fenintegral',
         accion: 'Visitar Instagram'
-    },
-    {
-        itemsName: 'Facebook',
-        description: '@fenintegral',
-        icon: 'facebook',
-        link: 'https://www.facebook.com/fenintegral',
-        accion: 'Visitar Facebook'
-    },
-    {
-        itemsName: 'Twitter',
-        description: '@fenintegral',
-        icon: 'twitter',
-        link: 'https://twitter.com/fenintegral',
-        accion: 'Visitar Twitter'
-    },
-    {
-        itemsName: 'LinkedIn',
-        description: '@fenintegral',
-        icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/fenintegral',
-        accion: 'Visitar LinkedIn'
     }
 ];

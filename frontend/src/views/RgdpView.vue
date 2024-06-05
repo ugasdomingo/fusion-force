@@ -2,7 +2,7 @@
     <section class="rgdp-container">
         <h2>FINALIDAD EN EL TRATAMIENTO DE LOS DATOS</h2>
         <ul>
-            <li>ENERGY BUSINESS CENTER 2014 SL</li>
+            <li>FUSION FORCE SL</li>
             <li>CIF: | B66426537</li>
             <li>Dirección: | MARESME, 54 2 4D , 08023 TERRASSA - BARCELONA</li>
             <li>Email: | rgpd@energybusiness.es</li>
@@ -118,7 +118,7 @@
 
 <style scoped lang="scss">
 .rgdp-container {
-    padding: 2rem;
+    padding: 4rem 2rem;
 }
 h2 {
     font-size: 1.5rem;

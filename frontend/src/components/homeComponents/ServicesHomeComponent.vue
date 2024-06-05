@@ -8,7 +8,7 @@ import DisplayServicesComponent from '@/common/DisplayServicesComponent.vue';
 
 <template>
     <section id="services" class="services-container">
-        <h3>¿Cómo te podemos ayudemos a ahorrar hoy?</h3>
+        <h3>Servicios gratuitos para ahorrar en electricidad</h3>
 
         <DisplayServicesComponent />
     </section>
@@ -19,7 +19,7 @@ import DisplayServicesComponent from '@/common/DisplayServicesComponent.vue';
     width: 100%;
     padding: 4rem 0;
     position: relative;
-    min-height: 70vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

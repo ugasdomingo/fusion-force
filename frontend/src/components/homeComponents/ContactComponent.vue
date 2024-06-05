@@ -4,22 +4,13 @@ import DisplayContacComponent from '@/common/DisplayContactComponent.vue';
 
 <template>
     <section class="contact-container">
-        <div class="left-content">
-            <h3 class="q-mb-none">Nos encargamos de todo, sin costo para ti</h3>
-            <h5 class="text-justify q-mb-none">
-                Todos nuestros servicios de comparación, gestión de altas y bajas y asesoría
-                energética son gratuitos. Eso lo logramos gracias a nuestros acuerdos con todas las
-                empresas energéticas del país.
-            </h5>
-            <h5 class="text-justify">
-                Contáctanos en cualquier momento, por cualquier de nuestros canales, te atenderemos
-                a la brevedad posible.
-            </h5>
-        </div>
-        <div class="column items-center right-content">
-            <h5>Contacto y Redes Sociales</h5>
-            <DisplayContacComponent iconsSize="20px" />
-        </div>
+        <h3>Contacto y Redes Sociales</h3>
+        <DisplayContacComponent iconsSize="20px" />
+        <img
+            src="https://img.freepik.com/free-photo/design-made-up-onion-rings_23-2147927094.jpg?t=st=1717608510~exp=1717612110~hmac=edb3a3e42ac26eae16fa217eddf555c90b8fb384dcdf5815900ca025dc6da1e8&w=740"
+            alt="Hero"
+            class="contact-background"
+        />
     </section>
 </template>
 <style scoped>
@@ -28,22 +19,27 @@ import DisplayContacComponent from '@/common/DisplayContactComponent.vue';
     box-sizing: border-box;
     position: relative;
     display: flex;
-    justify-content: space-between;
-    padding: 4rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 30%;
+    margin: 0 auto;
 }
-.left-content {
-    width: 50%;
-}
-.left-content h3 {
-    margin-bottom: 0;
+.contact-container h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
     color: var(--color-primary);
+    text-align: center;
 }
-.right-content {
-    border: 1px solid blue;
-    border-radius: 8px;
-    padding: 1rem;
+.contact-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: top;
+    top: 0;
+    right: 0;
+    z-index: -900;
 }
-
 @media screen and (max-width: 760px) {
     .contact-container {
         padding: 2rem 1rem;

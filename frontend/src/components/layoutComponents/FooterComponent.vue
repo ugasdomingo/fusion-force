@@ -14,12 +14,12 @@ import { RouterLink } from 'vue-router';
 <style scoped>
 .footer {
     display: flex;
-    height: 100%;
+    height: 3rem;
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
     margin: 0;
-    background-image: linear-gradient(to bottom, rgb(99, 2, 183, 0.9), rgb(0, 0, 0, 0.9));
+    background-color: var(--color-dark);
 }
 .footer h6 {
     color: rgba(255, 255, 255, 0.8);

@@ -4,7 +4,6 @@ import { useBlogsStore } from '@/stores/blog-store';
 
 //Import Components
 import { textSolarPanels } from '@/static/textSolarPanels';
-import BlogGalleryComponent from '@/components/blogComponents/BlogGalleryComponent.vue';
 import SolarFormComponent from './SolarFormComponent.vue';
 
 //Activate tools
@@ -16,7 +15,6 @@ blogStore.getAllBlogs(3);
     <main class="panels-container">
         <div class="info-container">
             <h2 class="q-mb-md">Paneles Solares</h2>
-            <button href="#cotizar" class="cotizar-btn">Cotizar sin compromisos</button>
 
             <p v-html="textSolarPanels[0].p1"></p>
             <p v-html="textSolarPanels[0].p2"></p>
@@ -28,61 +26,62 @@ blogStore.getAllBlogs(3);
         <aside id="cotizar" class="form-container">
             <SolarFormComponent :size="'width: auto'" />
         </aside>
-        <section>
-            <BlogGalleryComponent :posts="blogStore.allBlogs" />
-        </section>
+        <img
+            src="https://img.freepik.com/free-photo/design-made-up-onion-rings_23-2147927094.jpg?t=st=1717608510~exp=1717612110~hmac=edb3a3e42ac26eae16fa217eddf555c90b8fb384dcdf5815900ca025dc6da1e8&w=740"
+            alt="Hero"
+            class="panels-background"
+        />
     </main>
 </template>
 
 <style scoped>
 .panels-container {
-    width: 100%;
-    box-sizing: border-box;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    position: relative;
+    align-items: center;
+    padding: 0 2rem;
+    margin-top: 4rem;
 }
-.cotizar-btn {
-    display: none;
-}
+
 .info-container {
     width: 50%;
-    padding: 0 2rem;
-    text-align: justify;
 }
-.info-container p {
-    font-size: medium;
+
+.cotizar-btn {
+    background-color: #f7b733;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
+
 .form-container {
     width: 40%;
-    position: absolute;
-    top: 5vh;
-    right: 2rem;
 }
-@media screen and (max-width: 760px) {
+.panels-background {
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    object-fit: cover;
+    object-position: top;
+    top: 0;
+    right: 0;
+    z-index: -900;
+}
+
+@media (max-width: 768px) {
     .panels-container {
-        width: auto;
-        display: flex;
         flex-direction: column;
-        align-items: center;
+        padding: 0 5%;
     }
-    .cotizar-btn {
-        display: inline-block;
-        margin: 0 0 8px;
-        background-color: var(--color-primary);
-        color: whitesmoke;
-    }
+
     .info-container {
-        width: auto;
+        width: 100%;
     }
+
     .form-container {
-        width: auto;
-        height: auto;
-        box-sizing: border-box;
-        position: inherit;
-        top: 2rem;
-        right: 0;
+        width: 100%;
     }
 }
 </style>

@@ -1,33 +1,44 @@
 <script setup lang="ts">
+import { ref } from 'vue';
 //Import Components
 import ComparadorFormComponent from '@/components/servicesComponents/ComparadorFormComponent.vue';
-import SuccessCaseComponent from '@/common/SuccessCaseComponent.vue';
+
+const comparadorLuz = ref(true);
 </script>
 
 <template>
     <main class="main-services">
-        <h3>Servicios Fenintegral</h3>
+        <h3>Comparador Fusión</h3>
         <h5>
-            Descubre el poder de la comparación para ahorrar en tus facturas de luz y gas en Madrid.
-            Nuestro servicio te brinda acceso exclusivo a las mejores tarifas del mercado,
-            asegurándote ahorros significativos.
-            <strong>
-                ¡Deja de pagar de más y empieza a disfrutar de una energía más económica y
-                eficiente!
-            </strong>
+            Descubre cómo comparar puede ayudarte a ahorrar en tus facturas de luz y gas en Madrid.
+            Nuestro servicio te ofrece acceso exclusivo a las mejores tarifas del mercado,
+            garantizándote ahorros significativos. ¡Deja de pagar de más y empieza a disfrutar de
+            una energía más económica y eficiente!
         </h5>
+        <section class="btn-section">
+            <button
+                @click="comparadorLuz = true"
+                :class="comparadorLuz ? 'normal-btn' : 'light-btn'"
+            >
+                Comparar Luz
+            </button>
+            <button
+                @click="comparadorLuz = false"
+                :class="comparadorLuz ? 'light-btn' : 'normal-btn'"
+            >
+                Comparar Gas
+            </button>
+        </section>
         <div class="services-container">
-            <section>
-                <ComparadorFormComponent comparador="Comparar Luz" />
-            </section>
-            <section>
-                <ComparadorFormComponent comparador="Comparar Gas" />
-            </section>
+            <ComparadorFormComponent v-if="comparadorLuz" comparador="Comparar Luz" />
+            <ComparadorFormComponent v-else comparador="Comparar Gas" />
         </div>
+        <img
+            src="https://img.freepik.com/free-photo/design-made-up-onion-rings_23-2147927094.jpg?t=st=1717608510~exp=1717612110~hmac=edb3a3e42ac26eae16fa217eddf555c90b8fb384dcdf5815900ca025dc6da1e8&w=740"
+            alt="Hero"
+            class="service-background"
+        />
     </main>
-    <div class="success">
-        <SuccessCaseComponent />
-    </div>
 </template>
 
 <style scoped>
@@ -37,26 +48,61 @@ import SuccessCaseComponent from '@/common/SuccessCaseComponent.vue';
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem 6rem;
+    padding: 4rem 6rem;
+}
+.main-services h3 {
+    margin-bottom: 1rem;
+    color: var(--color-primary);
 }
 .main-services h5 {
-    width: 70%;
+    width: 80%;
 }
-.services-container {
-    width: 100%;
+.btn-section {
     display: flex;
     justify-content: space-around;
-    padding: 0 2rem;
+    width: 50%;
+    margin: 2rem 0;
 }
-.services-container section {
-    width: 40%;
-    margin-bottom: 3rem;
+.normal-btn {
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    border: 0px;
+    font-weight: 600;
+    font-size: medium;
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+}
+.light-btn {
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--color-grey);
+    font-weight: 600;
+    font-size: medium;
+    background-color: var(--color-none);
+    color: var(--color-grey);
+    opacity: 0.8;
+}
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding: 0 4rem;
 }
 .success {
     display: flex;
     flex-direction: column;
     padding: 0 16rem;
     margin: 0 auto 3rem;
+}
+.service-background {
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    object-fit: cover;
+    object-position: top;
+    top: 0;
+    right: 0;
+    z-index: -900;
 }
 @media screen and (max-width: 760px) {
     .main-services {

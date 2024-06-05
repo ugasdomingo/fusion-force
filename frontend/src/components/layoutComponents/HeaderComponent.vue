@@ -24,8 +24,7 @@ const toggleMenu = () => {
 <template>
     <header>
         <RouterLink to="/" class="logo-container">
-            <img alt="logo" class="header-logo" src="/img/logo-img-only.webp" />
-            <h2>Fenintegral</h2>
+            <img alt="logo" class="header-logo" src="/img/logo-fusion-nobg.png" />
         </RouterLink>
 
         <NavbarComponent :menu-type="'normal'" class="normal-menu" />
@@ -45,12 +44,14 @@ const toggleMenu = () => {
 <style scoped>
 header {
     width: 100%;
-    height: 120px;
+    height: 5rem;
     box-sizing: border-box;
     padding: 0 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    top: 0;
 }
 
 .logo-container {
@@ -64,7 +65,7 @@ header {
     font-size: 2rem;
 }
 .header-logo {
-    max-height: 5rem;
+    height: 7rem;
     object-fit: cover;
     text-shadow: 0px 0px 8px var(--color-white);
 }

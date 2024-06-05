@@ -10,7 +10,7 @@ import PrivacyTextComponent from '@/components/privacyComponents/PrivacyTextComp
 
 <style scoped>
 .politic-container {
-    padding: 2rem 6rem;
+    padding: 4rem 6rem;
 }
 @media screen and (max-width: 760px) {
     .politic-container {

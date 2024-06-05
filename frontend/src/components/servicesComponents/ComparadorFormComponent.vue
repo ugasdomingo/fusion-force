@@ -62,10 +62,6 @@ const handleSubmit = async () => {
 <template>
     <main :class="comparador == 'Comparar Luz' ? 'luz-container' : 'gas-container'">
         <h5>{{ comparador }}</h5>
-        <p>
-            La foto de su factura es opciona, si no la tiene a la mano igual envíe el formulario y
-            le llamaremos a la brevedad posible
-        </p>
         <!--  <q-spinner-pie color="primary" size="5em" v-if="loadding" /> -->
         <form @submit.prevent="handleSubmit" class="form">
             <label class="label">Nombre y Apellido</label>
@@ -116,22 +112,12 @@ const handleSubmit = async () => {
                     v-model="politiquesAccepted"
                     :value="politiquesAccepted"
                 />
+                <p>Acceptar políticas de privacidad y tratamiento de datos</p>
                 <p>
-                    Tratamiento de los datos personales, se utilizarán los datos para revisar y
-                    garantizar la calidad del producto y/o servicio contratado (atención al cliente,
-                    encuestas de satisfacción, seguimiento sobre su producto y asesoramiento al
-                    mismo), así como para la comunicación o remisión de notificaciones necesarias u
-                    obligatorias, en relación con el control y ejecución del objeto del servicio.
-                    Comunicaciones comerciales: Mediante consentimiento expreso, ENERGY BUSINESS
-                    CENTER 2014 SL. , utilizará los datos personales con la finalidad de enviarle
-                    comunicaciones y mantenerle informado acerca de las novedades, noticias,
-                    eventos, productos y servicios relacionados con nosotros o nuestro sector.
-                    <br />
                     Mediante la aceptación de la casilla el usuario da consentimiento el envío de
                     comunicaciones comerciales, informando acerca de nuestros productos y servicios
                     <RouterLink to="rgdp">Más Información</RouterLink>
                 </p>
-                <p>Acceptar políticas de privacidad y tratamiento de datos</p>
                 <RouterLink to="politicas">Ver políticas</RouterLink>
             </div>
 

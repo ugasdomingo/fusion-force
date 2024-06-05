@@ -60,7 +60,6 @@ const handleSubmit = async () => {
 <template>
     <section class="solar-container" :style="size">
         <h5>Cotizar sin compromisos</h5>
-        <p>La foto de su factura es opcional.</p>
         <!-- <q-spinner-pie color="primary" size="5em" v-if="loadding" /> -->
         <!-- v-else -->
         <form @submit.prevent="handleSubmit" class="form">
@@ -124,7 +123,7 @@ const handleSubmit = async () => {
                 <option value="24-horas">Todo el día</option>
             </select>
 
-            <p>Adjuntar factura o una foto:</p>
+            <p class="file-title">Adjuntar factura o una foto:</p>
             <input
                 type="file"
                 ref="fileInput"
@@ -136,22 +135,12 @@ const handleSubmit = async () => {
             <!-- RGDP  -->
             <div class="rgdp">
                 <input type="checkbox" v-model="politiquesAccepted" :value="politiquesAccepted" />
+                <p>Acceptar políticas de privacidad y tratamiento de datos</p>
                 <p>
-                    Tratamiento de los datos personales, se utilizarán los datos para revisar y
-                    garantizar la calidad del producto y/o servicio contratado (atención al cliente,
-                    encuestas de satisfacción, seguimiento sobre su producto y asesoramiento al
-                    mismo), así como para la comunicación o remisión de notificaciones necesarias u
-                    obligatorias, en relación con el control y ejecución del objeto del servicio.
-                    Comunicaciones comerciales: Mediante consentimiento expreso, ENERGY BUSINESS
-                    CENTER 2014 SL. , utilizará los datos personales con la finalidad de enviarle
-                    comunicaciones y mantenerle informado acerca de las novedades, noticias,
-                    eventos, productos y servicios relacionados con nosotros o nuestro sector.
-                    <br />
                     Mediante la aceptación de la casilla el usuario da consentimiento el envío de
                     comunicaciones comerciales, informando acerca de nuestros productos y servicios
                     <RouterLink to="rgdp">Más Información</RouterLink>
                 </p>
-                <p>Acceptar políticas de privacidad y tratamiento de datos</p>
                 <RouterLink to="politicas">Ver políticas</RouterLink>
             </div>
 
@@ -166,11 +155,12 @@ const handleSubmit = async () => {
 
 <style scoped>
 .solar-container {
-    border: 1px solid var(--color-primary);
-    padding: 1rem;
+    width: 100%;
+    padding: 2rem 2rem;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
+    background-color: var(--color-white);
 }
 .solar-container h5 {
     margin: 0;
@@ -191,12 +181,15 @@ const handleSubmit = async () => {
     line-height: 0px;
     border: 1px solid var(--color-primary);
 }
+.file-title {
+    padding: 1rem 0 0;
+}
 /* RGDP */
 .rgdp {
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 0.5rem;
     font-size: xx-small;
     padding: 4px 0;
 }
@@ -221,8 +214,9 @@ const handleSubmit = async () => {
     font-weight: 600;
     font-size: medium;
     background-color: var(--color-none);
-    color: grey;
+    color: var(--color-grey);
     cursor: default;
+    margin-top: 1rem;
 }
 
 @media screen and (max-width: 760px) {

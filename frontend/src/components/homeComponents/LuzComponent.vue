@@ -33,33 +33,26 @@ onMounted(async () => {
 
 <template>
     <section id="luz-section" class="luz-comparador-container">
-        <h3>¿Quieres saber un secreto?</h3>
+        <h3>Las empresas energéticas te necesitan</h3>
         <h5>
-            <strong> Las empresas energéticas compiten por tu atención.</strong>
-            <br />Por eso siempre están sacando nuevas ofertas, nuestro comparador consigue la mejor
-            para ti.
+            Por eso siempre están sacando nuevas ofertas, nuestro comparador consigue la mejor para
+            ti.
         </h5>
-        <div class="success-comparador">
-            <section class="left-content">
-                <SuccessCaseComponent />
-            </section>
-
-            <section class="numbers-section">
-                <h2 class="text">
-                    Más de <span>{{ users }}</span> usuarios atendidos
-                </h2>
-                <h2 class="text">
-                    Más de <span>{{ dailyCalls }}</span> llamadas por día
-                </h2>
-            </section>
-        </div>
+        <section class="numbers-section">
+            <h2 class="text">
+                Más de <span>{{ users }}</span> usuarios atendidos
+            </h2>
+            <h2 class="text">
+                Más de <span>{{ dailyCalls }}</span> llamadas por día
+            </h2>
+        </section>
     </section>
 </template>
 
 <style scoped>
 .luz-comparador-container {
     width: 100%;
-    min-height: 60vh;
+    min-height: 40vh;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -74,18 +67,13 @@ h5 {
     margin-top: 0.5rem;
     color: var(--color-primary);
 }
-.success-comparador {
-    display: flex;
-    justify-content: space-between;
-}
 .btn-switch {
     margin: 1rem 0 0 1rem;
 }
 .numbers-section {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     gap: 2rem;
-    justify-content: center;
 }
 .numbers-section h2 {
     margin: 0;

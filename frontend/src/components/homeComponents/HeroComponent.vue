@@ -9,39 +9,44 @@ const leadStore = useLeadStore();
 <template>
     <section class="hero-container">
         <!-- Hero content  -->
-        <h2>Comparamos tu factura con toda la red<br />y te encontramos el mejor precio</h2>
+        <h2>Comparadora de Luz y Gas<br />Más de 10 años de experiencia</h2>
         <a class="business-btn" href="#services">
-            Descubre las formas de ahorrar en tu factura
+            Descubre cómo ahorrar en tu factura
             <mdicon name="arrow-down-bold-outline" width="24" class="icon-small" />
         </a>
 
         <!-- Hero Background Image  -->
-        <img src="/img/hero-bumb.webp" alt="Hero" class="hero-background" />
+        <img
+            src="https://img.freepik.com/free-photo/design-made-up-onion-rings_23-2147927094.jpg?t=st=1717608510~exp=1717612110~hmac=edb3a3e42ac26eae16fa217eddf555c90b8fb384dcdf5815900ca025dc6da1e8&w=740"
+            alt="Hero"
+            class="hero-background"
+        />
     </section>
 </template>
 
 <style scoped>
 .hero-container {
     width: 100%;
-    min-height: 500px;
+    min-height: 100vh;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 0 2rem;
     position: relative;
 }
 h2 {
-    width: 60%;
-    color: var(--color-white);
+    text-align: center;
+    color: var(--color-primary);
     font-size: 2rem;
     font-weight: 700;
     margin: 0 0 2rem;
 }
 a {
     width: 40%;
-    color: var(--color-white);
-    border: 1px solid var(--color-white);
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
     font-weight: 400;
 }
 .hero-background {

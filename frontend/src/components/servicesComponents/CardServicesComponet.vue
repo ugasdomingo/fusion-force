@@ -15,7 +15,6 @@ defineProps({
             <RouterLink :to="item.to">
                 <img :src="item.url" :alt="item.title" />
             </RouterLink>
-            <h5>{{ item.title }}</h5>
         </div>
         <div class="card-section">
             <RouterLink :to="item.to" class="link">
@@ -28,8 +27,8 @@ defineProps({
 
 <style scoped>
 .card-services {
-    max-width: 250px;
-    height: fit-content;
+    width: 350px;
+    height: 250px;
     box-sizing: border-box;
     border-radius: 1rem;
     display: flex;
@@ -37,7 +36,7 @@ defineProps({
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 .img-card-section {
-    height: 60%;
+    height: 80%;
     position: relative;
     background-color: var(--color-secondary);
     border-radius: 1rem 1rem 0 0;
@@ -51,17 +50,7 @@ img {
     opacity: 0.9;
     z-index: -1;
 }
-.img-card-section h5 {
-    position: absolute;
-    bottom: 0.5rem;
-    left: 0.5rem;
-    padding: 0;
-    margin: 0;
-    font-size: medium;
-    font-weight: 700;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
-    color: var(--color-white);
-}
+
 .card-section {
     width: 100%;
     height: 60px;
@@ -75,6 +64,6 @@ img {
     font-weight: 700;
     padding: 0 0 0 0.5rem;
     margin: auto 0;
-    color: var(--color-secondary);
+    color: var(--color-primary);
 }
 </style>

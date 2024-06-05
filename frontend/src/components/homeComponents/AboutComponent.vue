@@ -5,25 +5,17 @@ import { benefitsEnums } from '@/static/textBenefits';
 
 <template>
     <section class="about-container">
-        <!-- Left Content -->
-        <div class="left-content">
-            <h3>Por qué usar nuestro servicio gratuito:</h3>
-            <div class="benefits-container">
-                <div v-for="item in benefitsEnums" :key="item.title" class="icon">
-                    <mdicon :name="item.icon" />
-                    <p>{{ item.title }}</p>
-                </div>
-            </div>
-        </div>
+        <h3>¿Quienes somos?</h3>
+        <h5>
+            Somos una empresa dedicada a ofrecerte asesoría energética integral, para que no solo
+            ahorres dinero, sino también optimices el uso eficiente de la energía.
+        </h5>
 
-        <!-- Right Content -->
-        <div class="right-content">
-            <h3>¿Quienes somos?</h3>
-            <h5>
-                Somos más que una comparadora de Luz y Gas, somos una empresa enfocada en brindarte
-                asesoría energética de forma integral para que ademas de ahorrar mucho dinero
-                también consigas un uso eficiente de energía.
-            </h5>
+        <div class="benefits-container">
+            <div v-for="item in benefitsEnums" :key="item.title" class="icon">
+                <mdicon :name="item.icon" />
+                <p>{{ item.title }}</p>
+            </div>
         </div>
     </section>
 </template>
@@ -32,28 +24,31 @@ import { benefitsEnums } from '@/static/textBenefits';
 .about-container {
     width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     box-sizing: border-box;
     padding: 2rem 4rem;
     position: relative;
     color: var(--color-white);
-    background-image: linear-gradient(to right, rgb(99, 2, 183, 0.9), rgb(0, 0, 0, 0.9));
+    background-color: var(--color-secondary);
 }
 
-.left-content {
-    width: 50%;
-    margin-right: 3rem;
+.about-container h5 {
+    width: 70%;
+    text-align: center;
+    margin: 0.5rem 0;
 }
+
+.benefits-container {
+    margin-top: 3rem;
+    display: flex;
+    gap: 2rem;
+}
+
 .icon {
     display: flex;
     align-items: center;
     gap: 1rem;
-}
-.right-content {
-    width: 45%;
-    padding: 6rem 0 0;
-}
-.right-content h5 {
-    text-align: justify;
 }
 
 @media screen and (max-width: 760px) {

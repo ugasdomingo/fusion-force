@@ -6,9 +6,8 @@ import { useBlogsStore } from '@/stores/blog-store';
 import HeroComponent from '@/components/homeComponents/HeroComponent.vue';
 import LuzComponent from '@/components/homeComponents/LuzComponent.vue';
 import ServicesHomeComponent from '@/components/homeComponents/ServicesHomeComponent.vue';
-import AboutComponent from '@/components/homeComponents/AboutComponent.vue';
-import SolarPanelComponent from '@/components/homeComponents/SolarPanelComponent.vue';
 import ContactComponent from '@/components/homeComponents/ContactComponent.vue';
+import AboutComponent from '@/components/homeComponents/AboutComponent.vue';
 import BlogGalleryComponent from '@/components/blogComponents/BlogGalleryComponent.vue';
 
 //Activate tools
@@ -21,9 +20,8 @@ blogStore.getAllBlogs(3);
         <HeroComponent />
         <LuzComponent />
         <ServicesHomeComponent />
-        <AboutComponent />
-        <SolarPanelComponent />
         <ContactComponent />
+        <AboutComponent />
         <BlogGalleryComponent :posts="blogStore.allBlogs" :route="'blog'" />
     </main>
 </template>

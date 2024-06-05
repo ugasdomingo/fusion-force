@@ -5,7 +5,6 @@ import { RouterView } from 'vue-router';
 //Import Components
 import HeaderComponent from '@/components/layoutComponents/HeaderComponent.vue';
 import FooterComponent from '@/components/layoutComponents/FooterComponent.vue';
-import CallButonComponent from '@/components/layoutComponents/CallButonComponent.vue';
 </script>
 
 <template>
@@ -18,7 +17,7 @@ import CallButonComponent from '@/components/layoutComponents/CallButonComponent
 
 <style scoped>
 .body-app {
-    min-height: calc(100vh - 15vh);
+    min-height: 100vh;
     height: fit-content;
 }
 </style>
