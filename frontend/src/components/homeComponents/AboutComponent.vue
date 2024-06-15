@@ -53,18 +53,14 @@ import { benefitsEnums } from '@/static/textBenefits';
 
 @media screen and (max-width: 760px) {
     .about-container {
-        width: auto;
+        width: 100%;
         flex-direction: column;
         padding: 1rem 1rem;
+        box-sizing: border-box;
     }
-    .left-content {
-        width: auto;
-        margin: 0;
-    }
-    .right-content {
-        width: auto;
-        margin: 0;
-        padding: 0;
+    .benefits-container {
+        flex-direction: column;
+        gap: 1rem;
     }
 }
 </style>

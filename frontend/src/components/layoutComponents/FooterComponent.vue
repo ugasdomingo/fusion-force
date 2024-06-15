@@ -36,10 +36,18 @@ import { RouterLink } from 'vue-router';
 }
 @media screen and (max-width: 760px) {
     .footer {
-        height: auto;
-        padding: 8px 4px;
+        height: fit-content;
+        padding: 0.5rem 1rem;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .btn {
+        margin: 0;
+        padding: 0;
+    }
+    .footer h6 {
+        margin: 0.5rem 0;
     }
 }
 </style>

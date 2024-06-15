@@ -41,3 +41,13 @@ h5 {
     font-size: large;
     font-weight: 500;
 }
+
+@media screen and (max-width: 768px) {
+    h3 {
+        font-size: x-large;
+    }
+    h5 {
+        font-size: medium;
+    }
+    
+}

@@ -88,12 +88,7 @@ const comparadorLuz = ref(true);
     width: 50%;
     padding: 0 4rem;
 }
-.success {
-    display: flex;
-    flex-direction: column;
-    padding: 0 16rem;
-    margin: 0 auto 3rem;
-}
+
 .service-background {
     width: 100%;
     height: fit-content;
@@ -106,22 +101,18 @@ const comparadorLuz = ref(true);
 }
 @media screen and (max-width: 760px) {
     .main-services {
-        width: auto;
-        padding: 2rem 0.5rem;
+        width: 100%;
+        padding: 4rem 2rem 2rem;
+        box-sizing: border-box;
     }
-    .main-services h5 {
-        width: auto;
+    .btn-section {
+        width: 100%;
     }
     .services-container {
-        padding: 0 1rem;
-        display: flex;
-        flex-direction: column;
-    }
-    .services-container section {
-        width: auto;
-    }
-    .success {
-        padding: 0 4px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
     }
 }
 </style>

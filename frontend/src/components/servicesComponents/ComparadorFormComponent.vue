@@ -181,4 +181,35 @@ const handleSubmit = async () => {
     color: var(--color-primary);
     cursor: default;
 }
+
+@media screen and (max-width: 760px) {
+    .luz-container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 2rem 0.2rem;
+    }
+    .gas-container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 2rem 0.2rem;
+    }
+    .form {
+        padding: 0 1rem;
+    }
+    .label {
+        margin-top: 1rem;
+    }
+    .rgdp {
+        font-size: small;
+        padding: 2rem 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .register-btn {
+        padding: 0.6rem 1rem;
+    }
+    .login-btn {
+        padding: 0.6rem 1rem;
+    }
+}
 </style>
