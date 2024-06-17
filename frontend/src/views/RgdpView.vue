@@ -3,9 +3,9 @@
         <h2>FINALIDAD EN EL TRATAMIENTO DE LOS DATOS</h2>
         <ul>
             <li>FUSION FORCE SL</li>
-            <li>CIF: | B66426537</li>
-            <li>Dirección: | MARESME, 54 2 4D , 08023 TERRASSA - BARCELONA</li>
-            <li>Email: | rgpd@energybusiness.es</li>
+            <li>CIF: | B56957178</li>
+            <li>Dirección: | Calle Ronda del poniente 12 2B - Madrid</li>
+            <li>Email: | rgpd@fusionforce.es</li>
         </ul>
         <p>
             Tratamiento de los datos personales con la finalidad de tramitar y gestionar el objeto
@@ -19,8 +19,7 @@
             obligatorias, en relación con el control y ejecución del objeto del contrato.
         </p>
         <p>
-            Comunicaciones comerciales: Mediante consentimiento expreso, ENERGY BUSINESS CENTER 2014
-            SL. , utilizará los datos personales con la finalidad de enviarle comunicaciones y
+            Comunicaciones comerciales: Mediante consentimiento expreso, Fusión Force S.L. , utilizará los datos personales con la finalidad de enviarle comunicaciones y
             mantenerle informado acerca de las novedades, noticias, eventos, productos y servicios
             relacionados con nosotros o nuestro sector.
         </p>
@@ -69,8 +68,8 @@
         <p>
             El interesado podrá ejercitar sus derechos sobre protección de datos (acceso,
             rectificación, oposición, supresión, limitación, portabilidad y no ser objeto de
-            decisiones individuales automatizadas) por correo electrónico en rgpd@energybusiness.es,
-            o por correo postal enMARESME, 54 2 4D , 08023 TERRASSA - BARCELONA D. En cualquier
+            decisiones individuales automatizadas) por correo electrónico en rgpd@fusionforce.es,
+            o por correo postal en Calle Ronda del poniente 12 2B - Madrid. En cualquier
             caso, puede solicitar la tutela de la Agencia Española de Protección de Datos a través
             de su página web.
         </p>
@@ -101,7 +100,7 @@
         <p>
             El interesado podrá ejercitar sus derechos sobre protección de datos (acceso,
             rectificación, oposición, supresión, limitación, portabilidad y no ser objeto de
-            decisiones individuales automatizadas) por medio del correo rgpd@energybusiness.es
+            decisiones individuales automatizadas) por medio del correo rgpd@fusionforce.es
         </p>
 
         <h5>Gracias por confiar en nuestro asesoría energética.</h5>
@@ -110,7 +109,7 @@
             energético.
         </h5>
 
-        <h2>ENERGY BUSINESS CENTER 2014 SL.</h2>
+        <h2>Fusión Force S.L. </h2>
     </section>
 </template>
 
